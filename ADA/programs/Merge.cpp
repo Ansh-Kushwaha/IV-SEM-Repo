@@ -24,6 +24,13 @@ int main() {
     int B[] = {1, 2, 4, 8, 11};
     int C[10];
     merge(A, 5, B, 5, C, 10);
+    for(int i = 0; i < 5; i++)
+        cout << A[i] << " ";
+    cout << "\n";
+
+    for(int i = 0; i < 5; i++)
+        cout << B[i] << " ";
+    cout << "\n";
 
     for(int i = 0; i < 10; i++)
         cout << C[i] << " ";
