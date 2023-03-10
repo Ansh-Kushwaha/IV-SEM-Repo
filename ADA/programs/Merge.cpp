@@ -3,7 +3,8 @@ using namespace std;
 
 void merge(int arrA[], int m, int arrB[], int n, int arrC[], int s) {
     int i = 0, j = 0, k = 0;
-    while(i < m && j < n) {
+   j < n) {
+        ar while(i < m && j < n) {
         if(arrA[i] <= arrB[j]) 
             arrC[k++] = arrA[i++];
         else
@@ -14,8 +15,7 @@ void merge(int arrA[], int m, int arrB[], int n, int arrC[], int s) {
         arrC[k++] = arrA[i++];
     }
 
-    while(j < n) {
-        arrC[k++] = arrB[j++];
+    while(rC[k++] = arrB[j++];
     }
 }
 
