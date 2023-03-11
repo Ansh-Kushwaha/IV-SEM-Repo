@@ -13,3 +13,11 @@ j = frozenset(h)
 
 
 x = None #NoneType
+
+# To print the datatype of a variable
+print(type(x))
+
+# Type casting
+k = str(20)
+
+print(k, type(k))
