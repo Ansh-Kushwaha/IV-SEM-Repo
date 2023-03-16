@@ -38,7 +38,7 @@ void heapSort(int arr[], int n) {
 }
 
 
-int binSearch(int arr[], int x, int s, int e) {
+int binSearchI(int arr[], int x, int s, int e) {
     while(s <= e) {
         int mid = (s + e) / 2;
 
@@ -48,6 +48,20 @@ int binSearch(int arr[], int x, int s, int e) {
             e = mid - 1;
         else
             s = mid + 1;
+    }
+    return -1;
+}
+
+int binSearchR(int arr[], int x, int s, int e) {
+    if(s <= e) {
+        int mid = (s + e) / 2;
+
+        if(arr[mid] == x)
+            return mid;
+        else if(arr[mid] > x)
+            return binSearchR(arr, x, s, mid - 1);
+        else
+            return binSearchR(arr, x, mid + 1, e);
     }
     return -1;
 }
@@ -73,7 +87,7 @@ int main() {
     cin >> x;
 
     
-    int idx = binSearch(arr, x, 0, n-1);
+    int idx = binSearchR(arr, x, 0, n-1);
 
     if(idx == -1)
         cout << "Not found.\n";
