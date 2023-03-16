@@ -10,7 +10,7 @@ A repository of programs/files made in 4th semester.
 # ADA Lab
 ## Experiments List
 ## Unit-1
-1. Write a program to find index position of an element in a given array. (Seuential Search) ```Done```
+1. Write a program to find index position of an element in a given array. (Sequential Search) ```Done```
 2. Write a program to remove duplicate elements from a given array. ```Done```
 3. Write a program to merge two sorted arrays. ```Done```
 4. Write a program to find common elements in two different arrays. ```Done```
