@@ -1,3 +1,4 @@
+# Insertion Sort
 def insertionSort(arr):
     n = len(arr)
     if n <= 1 :
@@ -14,6 +15,5 @@ def insertionSort(arr):
 arr = [23, 89, 12, 43, 64]
 insertionSort(arr)
 
-for i in range(len(arr)):
-    print(arr[i])
+print(arr)
         

@@ -1,3 +1,4 @@
+# Heap Sort
 def maxHeapify(arr, n, i):
     largest = i
     l = 2 * i + 1
@@ -8,7 +9,7 @@ def maxHeapify(arr, n, i):
     if r < n and arr[r] > arr[largest] :
         largest = r
     
-    if largest is not i :
+    if largest != i :
         arr[i], arr[largest] = arr[largest], arr[i]
         maxHeapify(arr, n, largest)
 
@@ -25,5 +26,4 @@ def heapSort(arr):
 arr = [8, 9, 1, 3, 5, 2, 4, 7, 6]
 heapSort(arr)
 
-for i in range(len(arr)):
-    print(arr[i])
+print(arr)

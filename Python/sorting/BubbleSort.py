@@ -13,5 +13,5 @@ def bubbleSort(arr):
 
 arr = [5, 3, 1, 2 , 6, 4]
 bubbleSort(arr)
-for i in range (len(arr)):
-    print(arr[i])
+
+print(arr)

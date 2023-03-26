@@ -1,3 +1,4 @@
+# Quick Sort
 def partiton(arr, low, high):
     pivot = arr[high]
     i = low - 1
@@ -18,6 +19,5 @@ def quickSort(arr, low, high):
 arr = [9, 87, 64, 32, 2]
 quickSort(arr, 0, len(arr) - 1)
 
-for i in range(len(arr)):
-    print(arr[i])
+print(arr)
         

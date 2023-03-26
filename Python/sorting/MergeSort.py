@@ -1,3 +1,4 @@
+# Merge Sort
 def merge(arr, low, mid, high):
     m = mid - low + 1
     n = high - mid
@@ -39,6 +40,5 @@ def mergeSort(arr, low, high):
 arr = [12, 43, 21, 53, 85]
 mergeSort(arr, 0, len(arr) - 1)
 
-for i in range(0, len(arr)):
-    print(arr[i])
+print(arr)
 
