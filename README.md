@@ -10,7 +10,7 @@ A repository of programs/files made in 4th semester.
 
 # ADA Lab
 ## Lab Dates :
-```02/03/2023``` ```09/03/2023``` ```16/03/2023``` ```23/03/2023```
+```02/03/2023``` | ```09/03/2023``` | ```16/03/2023``` | ```23/03/2023```
 ## Experiments List :
 ## Unit-1
 
@@ -30,9 +30,17 @@ A repository of programs/files made in 4th semester.
 
 # SE Lab :
 ## Lab Dates :
-```03/03/2023``` ```10/03/2023``` ```17/03/2023``` ```24/03/20203```
+```03/03/2023``` | ```10/03/2023``` | ```17/03/2023``` | ```24/03/20203```
 ## Experiments List :
 1. Case Study of SDLS
 2. Case Study of Waterfall Model
 3. Case Study of Prototype Model
 4. Case Study of RAD Model
+
+***
+
+# OS Lab :
+## Lab Dates :
+
+## Experiments List :
+1. History of Operating Systems.
