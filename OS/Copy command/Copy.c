@@ -27,7 +27,7 @@ int main(int argc, char* argv[]) {
             fputc(c, fp2);
             c = fgetc(fp1);
         }
-        printf("Contents copied to %s", argv[2]);
+        printf("Contents copied to %s \n", argv[2]);
         fclose(fp1);
         fclose(fp2);
     }

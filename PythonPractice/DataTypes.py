@@ -1,6 +1,7 @@
 a = "Ansh" #str
 b = 20 #int
 c = 5.6 #float
+
 d = 1 + 2j #complex
 
 
