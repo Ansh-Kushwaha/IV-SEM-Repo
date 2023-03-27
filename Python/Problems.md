@@ -9,5 +9,6 @@
 7. Write a program on declaring multiple variables.
 8. Write a program of adding, subtracting, multiplying and dividing two variables in Python.
 9. Define Identity operator, Membership operator and Bitwise operator.
+10. What are different data types in Python?
 
 ***
