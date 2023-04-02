@@ -24,7 +24,7 @@ A repository of programs/files made in 4th semester.
 8. Write a program to implement merge sort compare its time complexity with insertion and bubble sort. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/MergeSort.cpp)
 9. Write a program to implement quick sort and check its complexity in sorted array and reverse sorted array. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/QuickSort.cpp)
 10. Write a program to implement recursive and iterative procedure of binary search. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/BinarySearch.cpp)
-11. Write a program to implement Strassen's matrix multiplication. [***Java***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/StrassenMulti.java) [***C++***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/StrassenMultiplication.cpp)
+11. Write a program to implement Strassen's matrix multiplication. [***Java***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/StrassenMultiplication.java) [***C++***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/StrassenMultiplication.cpp)
 
 ***
 

@@ -1,4 +1,4 @@
-public class StrassenMulti {
+public class StrassenMultiplication {
     public int[][] add(int[][] A, int[][] B) {
         int n = A.length;
         int[][] C = new int[n][n];
@@ -33,12 +33,12 @@ public class StrassenMulti {
                 C[i2][j2] = CP[i1][j1];
     }
 
-    public int[][] multiplyS(int[][] A, int[][] B) {
-        int n = A.length;
-        int[][] R = new int[n][n];
+    public int[][] multiply(int[][] A, int[][] B) {
+        int n = A.length;        
+        int[][] C = new int[n][n];
 
         if(n == 1)
-            R[0][0] = A[0][0] * B[0][0];
+            C[0][0] = A[0][0] * B[0][0];
         else {
             // Setp 1 divide the matrix into parts
             int[][] A11 = new int[n / 2][n / 2];
@@ -63,62 +63,67 @@ public class StrassenMulti {
 
             // Using Formulas as described in algorithm
  
-            // M1:=(A1+A3)×(B1+B2)
-            int[][] M1 = multiplyS(add(A11, A22), add(B11, B22));
+            // P = (A11 + A22) × ( B11 + B22)
+            int[][] P = multiply(add(A11, A22), add(B11, B22));
            
-            // M2:=(A2+A4)×(B3+B4)
-            int[][] M2 = multiplyS(add(A21, A22), B11);
+            // Q = (A21 + A22) x B11
+            int[][] Q = multiply(add(A21, A22), B11);
            
-            // M3:=(A1−A4)×(B1+A4)
-            int[][] M3 = multiplyS(A11, sub(B12, B22));
+            // R = A11 x (B12 - B22)
+            int[][] R = multiply(A11, sub(B12, B22));
            
-            // M4:=A1×(B2−B4)
-            int[][] M4 = multiplyS(A22, sub(B21, B11));
+            // S = A22 × (B21 − B11)
+            int[][] S = multiply(A22, sub(B21, B11));
            
-            // M5:=(A3+A4)×(B1)
-            int[][] M5 = multiplyS(add(A11, A12), B22);
+            // T = (A11 + A12) x B22
+            int[][] T = multiply(add(A11, A12), B22);
            
-            // M6:=(A1+A2)×(B4)
-            int[][] M6 = multiplyS(sub(A21, A11), add(B11, B12));
+            // U = (A21 - A11) x (B11 + B12)
+            int[][] U = multiply(sub(A21, A11), add(B11, B12));
            
-            // M7:=A4×(B3−B1)
-            int[][] M7 = multiplyS(sub(A12, A22), add(B21, B22));
+            // V = (A12 - A21) x (B21 + B22)
+            int[][] V = multiply(sub(A12, A22), add(B21, B22));
  
-            // P:=M2+M3−M6−M7
-            int[][] C11 = add(sub(add(M1, M4), M5), M7);
+            // C11 = P + S - T + V
+            int[][] C11 = add(sub(add(P, S), T), V);
            
-            // Q:=M4+M6
-            int[][] C12 = add(M3, M5);
+            // C12 = R + T
+            int[][] C12 = add(R, T);
            
-            // R:=M5+M7
-            int[][] C21 = add(M2, M4);
+            // C21 = Q + S
+            int[][] C21 = add(Q, S);
            
-            // S:=M1−M3−M4−M5
-            int[][] C22 = add(sub(add(M1, M3), M2), M6);
+            // C22 = P + R - Q + U
+            int[][] C22 = add(sub(add(P, R), Q), U);
 
             // Step 3: Join 4 halves into one result matrix
-            join(C11, R, 0, 0);
-            join(C12, R, 0, n / 2);
-            join(C21, R, n / 2, 0);
-            join(C22, R, n / 2, n / 2);
+            join(C11, C, 0, 0);
+            join(C12, C, 0, n / 2);
+            join(C21, C, n / 2, 0);
+            join(C22, C, n / 2, n / 2);
 
         }
-        return R;
+        return C;
     }
 
     public static void main(String[] args) {
-        int[][] A = { {1, 2},
-                      {2, 1} };
-        int[][] B = { {2, 2},
-                      {2, 2} };
+        int[][] A = { { 1, 1, 1, 1 },
+                      { 2, 2, 2, 2 },
+                      { 3, 3, 3, 3 },
+                      { 2, 2, 2, 2 } };
+                      
+        int[][] B = { { 1, 1, 1, 1 },
+                      { 2, 2, 2, 2 },
+                      { 3, 3, 3, 3 },
+                      { 2, 2, 2, 2 } };
         
-        StrassenMulti s = new StrassenMulti();
+        StrassenMultiplication s = new StrassenMultiplication();
 
-        int[][] C = s.multiplyS(A, B);
+        int[][] C = s.multiply(A, B);
 
         for(int i = 0; i < C.length; i++) {
             for(int j = 0; j < C.length; j++) {
-                System.out.print(C[i][j] + " ");
+                System.out.print("\t" + C[i][j]);
             }
             System.out.println();
         }
