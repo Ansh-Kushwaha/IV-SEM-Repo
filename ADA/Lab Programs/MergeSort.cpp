@@ -6,8 +6,7 @@ void merge(int arr[], int s, int mid, int e) {
     int l = mid - s + 1;
     int r = e - mid;
 
-    int L[l];
-    int R[r];
+    int L[l], R[r];
 
     for(int i = 0; i < l; i++)
         L[i] = arr[s + i];

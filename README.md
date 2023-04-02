@@ -24,7 +24,7 @@ A repository of programs/files made in 4th semester.
 8. Write a program to implement merge sort compare its time complexity with insertion and bubble sort. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/MergeSort.cpp)
 9. Write a program to implement quick sort and check its complexity in sorted array and reverse sorted array. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/QuickSort.cpp)
 10. Write a program to implement recursive and iterative procedure of binary search. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/BinarySearch.cpp)
-11. Write a program to implement Strassen's matrix multiplication. ```ToDo```
+11. Write a program to implement Strassen's matrix multiplication. [***Java***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/StrassenMulti.java) [***C++***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/StrassenMultiplication.cpp)
 
 ***
 
@@ -32,10 +32,12 @@ A repository of programs/files made in 4th semester.
 ## Lab Dates :
 ```03/03/2023``` | ```10/03/2023``` | ```17/03/2023``` | ```24/03/2023``` | ```31/03/2023```
 ## Experiments List :
-1. Case Study of SDLS
+1. Case Study of SDLC Models
 2. Case Study of Waterfall Model
 3. Case Study of Prototype Model
-4. Case Study of RAD Model
+4. Case Study of RAD (Rapid Application Development) Model
+5. Case Study of Spiral Model
+6. Case Study of CMM (Capability Maturity Moel)
 
 ***
 
