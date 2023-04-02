@@ -61,9 +61,8 @@ public class StrassenMultiplication {
             split(B, B21, n / 2, 0);
             split(B, B22, n / 2, n / 2);
 
-            // Using Formulas as described in algorithm
- 
-            // P = (A11 + A22) × ( B11 + B22)
+            // Using formulas as described in algorithm
+            // P = (A11 + A22) × (B11 + B22)
             int[][] P = multiply(add(A11, A22), add(B11, B22));
            
             // Q = (A21 + A22) x B11
