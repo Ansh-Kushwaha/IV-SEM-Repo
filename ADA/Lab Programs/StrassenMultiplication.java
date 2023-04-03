@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class StrassenMultiplication {
     public int[][] add(int[][] A, int[][] B) {
         int n = A.length;
@@ -37,8 +38,9 @@ public class StrassenMultiplication {
         int n = A.length;        
         int[][] C = new int[n][n];
 
-        if(n == 1)
+        if(n == 1) {
             C[0][0] = A[0][0] * B[0][0];
+        }
         else {
             // Setp 1 divide the matrix into parts
             int[][] A11 = new int[n / 2][n / 2];
@@ -64,7 +66,7 @@ public class StrassenMultiplication {
             // Using formulas as described in algorithm
             // P = (A11 + A22) × (B11 + B22)
             int[][] P = multiply(add(A11, A22), add(B11, B22));
-           
+            
             // Q = (A21 + A22) x B11
             int[][] Q = multiply(add(A21, A22), B11);
            
