@@ -31,9 +31,9 @@ void join(int* partA, int* A, int partS, int s, int i, int j) {
 
 void multiplyStrassen(int* A, int* B, int* C, int n) {
     if(n == 2) {
-        *C = (*A * *B)+ (*(A+(n/2)) * *(B+n));
+        *C = (*A * *B) + (*(A+(n/2)) * *(B+n));
         *(C+(n/2)) = (*A * *(B+(n/2))) + (*(A+(n/2)) * *(B+(2*n-1)));
-        *(C+n) = (*(A+n) * *B)+ (*(A+(2*n-1)) * *(B+n));
+        *(C+n) = (*(A+n) * *B) + (*(A+(2*n-1)) * *(B+n));
         *(C+(2*n-1)) = (*(A+n) * *(B+(n/2))) + (*(A+(2*n-1)) * *(B+(2*n-1)));
     }
     else {
