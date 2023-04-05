@@ -110,11 +110,9 @@ void multiplyStrassen(int* A, int* B, int* C, int n) {
 
 		// C11 = P + S - T + V
 		int C11[n / 2][n / 2];
-		int C1[n / 2][n / 2];
-		int C2[n / 2][n / 2];
-		add(&P[0][0], &S[0][0], &C1[0][0], n / 2, n / 2);
-		sub(&C1[0][0], &T[0][0], &C2[0][0], n / 2, n / 2);
-		add(&C2[0][0], &V[0][0], &C11[0][0], n / 2, n / 2);
+		add(&P[0][0], &S[0][0], &C11[0][0], n / 2, n / 2);
+		sub(&C11[0][0], &T[0][0], &C11[0][0], n / 2, n / 2);
+		add(&C11[0][0], &V[0][0], &C11[0][0], n / 2, n / 2);
 
 		// C12 = R + T
 		int C12[n / 2][n / 2];
@@ -126,11 +124,9 @@ void multiplyStrassen(int* A, int* B, int* C, int n) {
 
 		// C22 = P + R - Q + U
 		int C22[n / 2][n / 2];
-		int C3[n / 2][n / 2];
-		int C4[n / 2][n / 2];
-		add(&P[0][0], &R[0][0], &C3[0][0], n / 2, n / 2);
-		sub(&C3[0][0], &Q[0][0], &C4[0][0], n / 2, n / 2);
-		add(&C4[0][0], &U[0][0], &C22[0][0], n / 2, n / 2);
+		add(&P[0][0], &R[0][0], &C22[0][0], n / 2, n / 2);
+		sub(&C22[0][0], &Q[0][0], &C22[0][0], n / 2, n / 2);
+		add(&C22[0][0], &U[0][0], &C22[0][0], n / 2, n / 2);
 
 		// Join 4 halves into one result matrix
 		join(&C11[0][0], C, n / 2, n, 0, 0);
