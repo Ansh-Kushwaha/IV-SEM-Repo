@@ -53,7 +53,7 @@ A repository of programs/files made in 4th semester.
 
 # OS Lab :
 ## Lab Dates :
-```27/02/2023``` | ```06/03/2023``` | ```13/03/2023``` | ```20/02/2023 (Abs.)``` | ```27/03/2023```
+```27/02/2023``` | ```06/03/2023``` | ```13/03/2023``` | ```20/02/2023 (Abs.)``` | ```27/03/2023``` | ```10/04/2023```
 ## Experiments List :
 1. History of Operating Systems.
 

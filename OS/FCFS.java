@@ -21,6 +21,8 @@ public class FCFS {
             Ex[i] = input.nextInt();
         }
         input.close();
+        calculateTurnoverTime();
+        calculateProcessWaitingTime();
         System.out.println();
     }
 
@@ -36,29 +38,29 @@ public class FCFS {
             Ex[i] = input.nextInt();
         }
         input.close();
+        calculateTurnoverTime();
+        calculateProcessWaitingTime();
         System.out.println();
     }
 
-    public void getTurnoverTime() {
+    private void calculateTurnoverTime() {
         for(int i = 0; i < n; i++) {
             for(int j = 0; j <= i; j++) {
                 T[i] += Ex[j];
             }
         }
-        System.out.println("Turnover time of each process :");
-        System.out.println("\tProcess" + "\tTime");
-        for(int i = 0; i < n; i++)
-            System.out.println("\tP" + (i + 1) + "\t" + T[i]);
-        System.out.println();
     }
 
-    public void getProcessWaitingTime() {
-        System.out.println("Waiting time of each process :");
-        System.out.println("\tProcess" + "\tTime");
+    private void calculateProcessWaitingTime() {
         for(int i = 0; i < n; i++) {
             W[i] = T[i] - Ex[i];
-            System.out.println("\tP" + (i + 1) + "\t" + W[i]);
         }
+    }
+
+    public void getSchedule() {
+        System.out.println("Process\tEx(t)\tT(t)\tW(t)");
+        for(int i = 0; i < n; i++)
+            System.out.println(T[i] + "\t" + Ex[i] + "\t" + T[i] + "\t" + W[i]);
         System.out.println();
     }
 
