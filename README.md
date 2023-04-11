@@ -43,11 +43,15 @@ A repository of programs/files made in 4th semester.
 
 # COA Lab :
 ## Lab Dates :
-```28/02/2023``` | ```07/03/2023``` | ```14/03/2023``` | ```21/03/20203 (Abs.)``` | ```28/03/2023```
+```28/02/2023``` | ```07/03/2023``` | ```14/03/2023``` | ```21/03/20203 (Abs.)``` | ```28/03/2023``` | ```11/04/2023```
 ## Experiments List :
 1. Study of multiplexer and demultiplexer.
 2. Study of half adder and subtractor
 3. Study of full adder and subtractor
+
+### Programs :
+1. Write a program to add two 8 bit numbers.
+2. Write a program to store any two numbers and exchange without using third party and print.
 
 ***
 
