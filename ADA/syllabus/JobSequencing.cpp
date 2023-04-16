@@ -18,31 +18,30 @@ int jobSeq(struct Job jobs[], int n) {
             t = jobs[i].deadline;
     }
 
-    int Profits[t]; // Scheduling of jobs
+    Job* schJobs[t]; // Scheduling of jobs
     int totalProfit = 0;
     for(int i = 0; i < t; i++)
-        Profits[i] = 0;
+        schJobs[i] = NULL;
     for(int i = 0; i < n; i++) {
-        if(t != 0) {
             int currDeadline = jobs[i].deadline - 1;
-            if(Profits[currDeadline] == 0) {
-                Profits[currDeadline] = jobs[i].profit;
-                totalProfit += jobs[i].profit;
+            if(schJobs[currDeadline] == NULL) {
+                *schJobs[currDeadline] = jobs[i];
+                cout << "Placed at " << currDeadline << endl;
             }
             else {
                 for(int j = currDeadline - 1; j >= 0; j--) {
-                    if(Profits[currDeadline] == 0) {
-                        Profits[currDeadline] = jobs[i].profit;
-                        totalProfit += jobs[i].profit;
+                    if(schJobs[currDeadline] == NULL) {
+                        *schJobs[currDeadline] = jobs[i];
+                        cout << "Placed at " << j << endl;
                     }
                 }
             }
-        }
-        t--;
     }
-    cout << "\tTime\tJob\n";
-    for(int i = 0; i < t; i++)
-        cout  << "\t" << i << " - " << i + 1 << "\tJ" << jobs[i].id << "\n";
+    cout << "\tTime\tJob\tProfit\n";
+    for(int i = 0; i < t; i++) {
+        cout  << "\t" << i << " - " << i + 1 << "\tJ" << schJobs[i]->id <<  "\t" << schJobs[i]->profit << "\n";
+        totalProfit += schJobs[i]->profit;
+    }
     return totalProfit;
 }
 int main() {
@@ -51,7 +50,7 @@ int main() {
     cout << "Enter number of jobs : ";
     cin >> n;
     for(int i = 0; i < n; i++) {
-        // jobs[i].id = i + 1;
+        jobs[i].id = i + 1;
         cout << "Enter profit and deadline of job " << i + 1 << " : ";
         cin >> jobs[i].profit >> jobs[i].deadline;
     }
