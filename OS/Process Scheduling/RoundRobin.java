@@ -30,7 +30,7 @@ public class RoundRobin {
 
     private void set() {
         Scanner input = new Scanner(System.in);
-        System.out.println("Enter time quantum : ");
+        System.out.print("Enter time quantum : ");
         this.quantum = input.nextInt();
         System.out.print("Enter the number of processes: ");
         n = input.nextInt();
@@ -46,15 +46,34 @@ public class RoundRobin {
     }
 
     private void calcTurnoverTime() {
-        int remExT[] = new int[n];
         for(int i = 0; i < n; i++)
-            remExT[i] = Ex[i];
-        
+            T[i] = Ex[i] + W[i];
     }
     
     private void calcWaitTime() {
-        for(int i = 0; i < n; i++) {
-            W[i] = T[i] - Ex[i];
+        int remExT[] = new int[n];
+        for(int i = 0; i < n; i++)
+            remExT[i] = Ex[i];
+        int currTime = 0;
+
+        while(true) {
+            boolean done = true;
+            for(int i = 0; i < n; i++) {
+                if(remExT[i] > 0) {
+                    done = false;
+                    if(remExT[i] > quantum) {
+                        currTime += quantum;
+                        remExT[i] -= quantum;
+                    }
+                    else {
+                        currTime += quantum;
+                        W[i] = currTime - Ex[i];
+                        remExT[i] = 0;
+                    }
+                }
+            }
+            if(done)
+                break;
         }
     }
     
@@ -76,8 +95,8 @@ public class RoundRobin {
 
 
     public static void main(String[] args) {
-        RoundRobin fcfs = new RoundRobin();
-        fcfs.getSchedule();
-        System.out.println("Average waiting time : " + fcfs.getAvgWaitingTime());
+        RoundRobin rr = new RoundRobin();
+        rr.getSchedule();
+        System.out.println("Average waiting time : " + rr.getAvgWaitingTime());
     }
 }

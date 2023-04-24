@@ -43,7 +43,7 @@ A repository of programs/files made in 4th semester.
 
 # COA Lab :
 ## Lab Dates :
-```28/02/2023``` | ```07/03/2023``` | ```14/03/2023``` | ```21/03/20203 (Abs.)``` | ```28/03/2023``` | ```11/04/2023```
+```28/02/2023``` | ```07/03/2023``` | ```14/03/2023``` | ```21/03/20203 (Abs.)``` | ```28/03/2023``` | ```11/04/2023``` | ```18/04/2023```
 ## Experiments List :
 1. Study of multiplexer and demultiplexer.
 2. Study of half adder and subtractor
@@ -57,10 +57,13 @@ A repository of programs/files made in 4th semester.
 
 # OS Lab :
 ## Lab Dates :
-```27/02/2023``` | ```06/03/2023``` | ```13/03/2023``` | ```20/02/2023 (Abs.)``` | ```27/03/2023``` | ```10/04/2023```
+```27/02/2023``` | ```06/03/2023``` | ```13/03/2023``` | ```20/02/2023 (Abs.)``` | ```27/03/2023``` | ```10/04/2023``` | ```17/04/2023``` | ```24/04/2023```
 ## Experiments List :
 1. History of Operating Systems.
-
+2. WAP to implement FCFS CPU Scheduling Algorithm.
+2. WAP to implement SJF CPU Scheduling Algorithm.
+2. WAP to implement Priority CPU Scheduling Algorithm.
+2. WAP to implement Round Robin CPU Scheduling Algorithm.
 ***
 
 # Python Lab :
