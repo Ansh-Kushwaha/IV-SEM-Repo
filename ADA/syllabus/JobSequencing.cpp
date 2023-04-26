@@ -11,6 +11,8 @@ bool compareTwoJobs(Job j1, Job j2) {
 
 int jobSeq(struct Job jobs[], int n) {
     sort(jobs, jobs + n, compareTwoJobs);
+    for(int i = 0; i < n; i++)
+        cout << jobs[i].id << " " << jobs[i].profit << " " << jobs[i].deadline << endl;
 
     int t = 0; // Total time
     for(int i = 0; i < n; i++) {
@@ -18,29 +20,28 @@ int jobSeq(struct Job jobs[], int n) {
             t = jobs[i].deadline;
     }
 
-    Job* schJobs[t]; // Scheduling of jobs
+    int schJobs[n]; // Scheduling of jobs
     int totalProfit = 0;
     for(int i = 0; i < t; i++)
-        schJobs[i] = NULL;
-    for(int i = 0; i < n; i++) {
-            int currDeadline = jobs[i].deadline - 1;
-            if(schJobs[currDeadline] == NULL) {
-                *schJobs[currDeadline] = jobs[i];
-                cout << "Placed at " << currDeadline << endl;
-            }
-            else {
-                for(int j = currDeadline - 1; j >= 0; j--) {
-                    if(schJobs[currDeadline] == NULL) {
-                        *schJobs[currDeadline] = jobs[i];
-                        cout << "Placed at " << j << endl;
-                    }
+        schJobs[i] = 0;
+    for(int i = 0; i < t; i++) {
+        int d = jobs[i].deadline;
+        if(schJobs[d - 1] == 0) {
+            schJobs[d - 1] = jobs[i].id;
+            cout << "Place J" << jobs[i].id << " at" << d - 1 << endl;
+        }
+        else {
+            for(int j = d - 2; j >= 0; j--)
+                if(schJobs[j] == 0) {
+                    schJobs[j] = jobs[i].id;
+                    cout << "Place J" << jobs[i].id << " at" << j << endl;
                 }
-            }
+        }
     }
     cout << "\tTime\tJob\tProfit\n";
     for(int i = 0; i < t; i++) {
-        cout  << "\t" << i << " - " << i + 1 << "\tJ" << schJobs[i]->id <<  "\t" << schJobs[i]->profit << "\n";
-        totalProfit += schJobs[i]->profit;
+        cout  << "\t" << i << " - " << i + 1 << "\tJ" << jobs[schJobs[i] - 1].id <<  "\t" << jobs[schJobs[i] - 1].profit << "\n";
+        totalProfit += jobs[i].profit;
     }
     return totalProfit;
 }
