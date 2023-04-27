@@ -1,4 +1,5 @@
 #include <iostream>
+#include <algorithm>
 using namespace std;
 
 struct Item {
@@ -7,6 +8,8 @@ struct Item {
     int weight;
 
     double proPWt;
+
+    Item() {}
 
     Item(int i, int p, int w) {
         id = i;
@@ -22,21 +25,13 @@ bool compareItems(Item i1, Item i2) {
 
 void greedyKnapsack(Item items[], int m, int n) {
     int orIdx[n];
-    for(int i = 0; i < n; i++) {
-        int maxIdx = i;
-        for(int j = i + 1; j < n; j++) {
-            if(compareItems(items[j], items[i]))
-                maxIdx = j;
-        }
-        if(maxIdx != i) {
-            Item temp = items[i];
-            items[i] = items[maxIdx];
-            items[maxIdx] = temp;
-        }
-    }
+    sort(items, items + n, compareItems);
 
-    for(int i = 0; i < n; i++) 
+    for(int i = 0; i < n; i++) {
         orIdx[i] = (items[i].id - 1);
+        // cout << orIdx[i] << " " << items[i].proPWt << " ";
+    }
+    cout << endl;
 
     double result[n];
 
@@ -61,7 +56,7 @@ void greedyKnapsack(Item items[], int m, int n) {
         maxProfit += result[orIdx[i]] * items[i].profit;
     }
     
-    cout << "[";
+    cout << "\n[";
     for(int i = 0; i < n; i++) {
         cout << "x" << (i + 1) << " : " << result[i];
         if(i != n - 1)
@@ -72,11 +67,19 @@ void greedyKnapsack(Item items[], int m, int n) {
 }
 
 int main() {
-    int m = 20;
-    Item items[] = { {1, 10, 15},
-                     {2, 20, 15},
-                     {3, 30, 10} };
-    int n = sizeof(items) / sizeof(items[0]);
+    int m, n;
+    cout << "Enter maximum capacity of Knapsack : ";
+    cin >> m;
+    cout << "Enter number of items : ";
+    cin >> n;
+    Item items[n];
+    for(int i = 0; i < n; i++) {
+        items[i].id = i + 1;
+        cout << "Enter profit and weight of item " << (i + 1) << " : ";
+        cin >> items[i].profit >> items[i].weight;
+        items[i].proPWt = (double) items[i].profit / items[i].weight;
+    }
+
     greedyKnapsack(items, m, n);
 
     return 0;

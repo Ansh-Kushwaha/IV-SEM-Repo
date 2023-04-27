@@ -2,7 +2,7 @@
 #include <vector>
 #include <queue>
 using namespace std;
-#define INF INT_MAX
+#define INF 2147483647
 
 int getMinimumDist(int v, int dist[], int n, bool s[]) {
     int minDist = INF;
@@ -50,7 +50,7 @@ int main() {
     dijkstra(graph, s, dist, v);
     cout << "\tNode\tDist\n";
     for(int i = 0; i < v; i++) {
-        cout << "\t" << (char) (65 + i) << "\t\t" << dist[i] << "\n";
+        cout << "\t" << (char) (65 + i) << "\t" << dist[i] << "\n";
     }
     return 0;
 }
