@@ -10,38 +10,57 @@ bool compareTwoJobs(Job j1, Job j2) {
 }
 
 int jobSeq(struct Job jobs[], int n) {
-    sort(jobs, jobs + n, compareTwoJobs);
+
+    Job jobsC[n];
     for(int i = 0; i < n; i++)
-        cout << jobs[i].id << " " << jobs[i].profit << " " << jobs[i].deadline << endl;
+        jobsC[i] = jobs[i];
+
+    int orIdx[n];
+
+    sort(jobsC, jobsC + n, compareTwoJobs);
+    for(int i = 0; i < n; i++)
+        orIdx[i] = jobsC[i].id;
+    
+    // for(int i = 0; i < n; i++)
+    //     cout << orIdx[i] << " " << jobsC[i].id << " " << jobsC[i].profit << " " << jobsC[i].deadline << endl;
 
     int t = 0; // Total time
     for(int i = 0; i < n; i++) {
-        if(jobs[i].deadline > t)
-            t = jobs[i].deadline;
+        if(jobsC[i].deadline > t)
+            t = jobsC[i].deadline;
     }
 
     int schJobs[n]; // Scheduling of jobs
     int totalProfit = 0;
+
     for(int i = 0; i < t; i++)
         schJobs[i] = 0;
+
     for(int i = 0; i < t; i++) {
-        int d = jobs[i].deadline;
+        int d = jobsC[i].deadline;
         if(schJobs[d - 1] == 0) {
-            schJobs[d - 1] = jobs[i].id;
-            cout << "Place J" << jobs[i].id << " at" << d - 1 << endl;
+            // cout << orIdx[i] << " " << d - 1 << endl;
+            schJobs[d - 1] = orIdx[i];
         }
         else {
-            for(int j = d - 2; j >= 0; j--)
+            for(int j = d - 2; j >= 0; j--) {
                 if(schJobs[j] == 0) {
-                    schJobs[j] = jobs[i].id;
-                    cout << "Place J" << jobs[i].id << " at" << j << endl;
+                    // cout << orIdx[i] << " " << j << endl;
+                    schJobs[j] = orIdx[i];
+                    break;
                 }
+            }
         }
     }
+
+    // for(int i = 0; i < t; i++)
+    //     cout << schJobs[i] << " ";
+    // cout << endl;
+
     cout << "\tTime\tJob\tProfit\n";
     for(int i = 0; i < t; i++) {
         cout  << "\t" << i << " - " << i + 1 << "\tJ" << jobs[schJobs[i] - 1].id <<  "\t" << jobs[schJobs[i] - 1].profit << "\n";
-        totalProfit += jobs[i].profit;
+        totalProfit += jobs[schJobs[i] - 1].profit;
     }
     return totalProfit;
 }
