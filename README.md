@@ -10,7 +10,7 @@ A repository of programs/files made in 4th semester.
 
 # ADA Lab
 ## Lab Dates :
-```02/03/2023``` | ```09/03/2023``` | ```16/03/2023``` | ```23/03/2023``` | ```06/04/2023```
+```02/03/2023``` | ```09/03/2023``` | ```16/03/2023``` | ```23/03/2023``` | ```06/04/2023``` | ```13/04/20203``` | ```27/04/2023```
 ## Experiments List :
 ## Unit-1
 
@@ -25,6 +25,11 @@ A repository of programs/files made in 4th semester.
 9. Write a program to implement quick sort and check its complexity in sorted array and reverse sorted array. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/9_QuickSort.cpp)
 10. Write a program to implement recursive and iterative procedure of binary search. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/10_BinarySearch.cpp)
 11. Write a program to implement Strassen's matrix multiplication. [***Java***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/11.2_StrassenMultiplication.java) [***C++***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/11.1_StrassenMultiplication.cpp)
+## Unit-2
+12. Waite a program to implement Knapsack Problem using Greedy Approach. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/12_KnapsackProblem.cpp)
+13. Write a program to implement single source shortest path algorithm. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/13_SingleSourceShortPath.cpp)
+14. Write a program to implement 0/1 Knapsack problem. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/14_0-1Knapsack.cpp)
+15. Write a program to implement Job Sequencing with deadline problem using Greedy Method. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/15_JobSequencing.cpp)
 
 ***
 
