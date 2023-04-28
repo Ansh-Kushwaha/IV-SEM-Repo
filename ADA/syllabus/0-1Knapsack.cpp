@@ -26,6 +26,15 @@ int knapsack(int m, int n, int pft[], int wt[]) {
         }
     }
 
+    // For reference
+    /*
+    for(int i = 0; i <= n; i++) {
+        cout << "\n";
+        for(int j = 0; j <= m; j++)
+            cout << T[i][j] << " ";
+    }
+    */
+
     return T[n][m];
     
 }

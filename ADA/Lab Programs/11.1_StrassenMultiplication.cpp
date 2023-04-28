@@ -153,7 +153,7 @@ int main() {
 
 	for(int i = 0; i < n; i++) {
 		for(int j = 0; j < n; j++)
-			cout << "\t" << C[i][j];
+			cout  << C[i][j] << "\t";
 		cout << "\n";
 	}
 			

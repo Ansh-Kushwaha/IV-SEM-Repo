@@ -1,8 +1,7 @@
 #include <iostream>
 #include <vector>
-#include <queue>
 using namespace std;
-#define INF 2147483647
+#define INF 1000000
 
 int getMinimumDist(int v, int dist[], int n, bool s[]) {
     int minDist = INF;
