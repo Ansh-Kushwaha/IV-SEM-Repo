@@ -30,7 +30,7 @@ void dijkstra(vector<vector<int>> graph, int v, int dist[], int n) {
         int u = getMinimumDist(i, dist, n, s);
         s[u] = true;
         for(int w = 0; w < graph[u].size(); w++)
-            if(!s[w] && graph[u][w] != 0)
+            if(!s[w] && graph[u][w] != INF)
                 if(dist[w] > dist[u] + graph[u][w])
                     dist[w] = dist[u] + graph[u][w];
     }
@@ -39,12 +39,12 @@ void dijkstra(vector<vector<int>> graph, int v, int dist[], int n) {
 int main() {
     int v = 6;
     int s = 0;
-    vector<vector<int> > graph = { {0, 4, 5, 0, 0, 0},      // cost
-                                   {4, 0, 11, 9, 7, 0},
-                                   {5, 11, 0, 0, 3, 0},
-                                   {0, 9, 0, 0, 13, 2},
-                                   {0, 7, 3, 13, 0, 6},
-                                   {0, 0, 0, 2, 6, 0} };
+    vector<vector<int> > graph = { {0, 4, 5, INF, INF, INF},      // cost
+                                   {4, 0, 11, 9, 7, INF},
+                                   {5, 11, 0, INF, 3, INF},
+                                   {INF, 9, INF, 0, 13, 2},
+                                   {INF, 7, 3, 13, 0, 6},
+                                   {INF, INF, INF, 2, 6, 0} };
     int dist[6];
     dijkstra(graph, s, dist, v);
     cout << "\tNode\tDist\n";

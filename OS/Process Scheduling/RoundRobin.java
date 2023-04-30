@@ -46,6 +46,7 @@ public class RoundRobin {
     }
 
     private void calcTurnoverTime() {
+        calcWaitTime();
         for(int i = 0; i < n; i++)
             T[i] = Ex[i] + W[i];
     }
@@ -86,7 +87,6 @@ public class RoundRobin {
 
     public void getSchedule() {
         calcTurnoverTime();
-        calcWaitTime();
         System.out.println("Process\tEx(t)\tT(t)\tW(t)");
         for(int i = 0; i < n; i++)
             System.out.println("P" + (i + 1) + "\t" + Ex[i] + "\t" + T[i] + "\t" + W[i]);

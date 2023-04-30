@@ -5,7 +5,7 @@ A repository of programs/files made in 4th semester.
 - Analysis Design of Algorithm
 - Software Engineering
 - Computer Organization & Architecture
-- Opertaing System
+- Operating System
 ***
 
 # ADA Lab
@@ -42,7 +42,9 @@ A repository of programs/files made in 4th semester.
 3. Case Study of Prototype Model
 4. Case Study of RAD (Rapid Application Development) Model
 5. Case Study of Spiral Model
-6. Case Study of CMM (Capability Maturity Moel)
+6. Case Study of CMM (Capability Maturity Model)
+7. Entity Relationship Diagram
+8. Data Flow Diagram
 
 ***
 
@@ -57,7 +59,7 @@ A repository of programs/files made in 4th semester.
 ### Programs :
 1. Write a program to add two 8 bit numbers.
 2. Write a program to store any two numbers and exchange without using third party and print.
-
+3. Write a program to multiply two 8 bit numbers.
 ***
 
 # OS Lab :
@@ -65,10 +67,10 @@ A repository of programs/files made in 4th semester.
 ```27/02/2023``` | ```06/03/2023``` | ```13/03/2023``` | ```20/02/2023 (Abs.)``` | ```27/03/2023``` | ```10/04/2023``` | ```17/04/2023``` | ```24/04/2023```
 ## Experiments List :
 1. History of Operating Systems.
-2. WAP to implement FCFS CPU Scheduling Algorithm.
-2. WAP to implement SJF CPU Scheduling Algorithm.
-2. WAP to implement Priority CPU Scheduling Algorithm.
-2. WAP to implement Round Robin CPU Scheduling Algorithm.
+2. WAP to implement FCFS CPU Scheduling Algorithm. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/OS/Process%20Scheduling/FCFS.java)
+2. WAP to implement SJF CPU Scheduling Algorithm. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/OS/Process%20Scheduling/ShortestJobFirst.java)
+2. WAP to implement Priority CPU Scheduling Algorithm. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/OS/Process%20Scheduling/PriorityScheduling.java)
+2. WAP to implement Round Robin CPU Scheduling Algorithm. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/OS/Process%20Scheduling/RoundRobin.java)
 ***
 
 # Python Lab :
