@@ -3,7 +3,7 @@
 MVI B, 00001010b  ; B <- 10 
 MVI C, 00001011b  ; C <- 11
 ADD B		      ; A <- A + B
-ADD C		      ; C <- A + C
-STA 2000		  ; M[10] <- A
+ADD C		      ; A <- A + C
+STA 2000		  ; M[2000] <- A
 
 HLT		          ; Halt

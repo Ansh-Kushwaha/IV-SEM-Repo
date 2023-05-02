@@ -50,7 +50,7 @@ A repository of programs/files made in 4th semester.
 
 # COA Lab :
 ## Lab Dates :
-```28/02/2023``` | ```07/03/2023``` | ```14/03/2023``` | ```21/03/20203 (Abs.)``` | ```28/03/2023``` | ```11/04/2023``` | ```18/04/2023```
+```28/02/2023``` | ```07/03/2023``` | ```14/03/2023``` | ```21/03/20203 (Abs.)``` | ```28/03/2023``` | ```11/04/2023``` | ```18/04/2023``` | ```25/04/2023``` | ```02/05/2023```
 ## Experiments List :
 1. Study of multiplexer and demultiplexer.
 2. Study of half adder and subtractor

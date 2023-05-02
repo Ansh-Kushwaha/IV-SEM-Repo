@@ -70,7 +70,6 @@ public class FCFS {
         System.out.println();
     }
 
-
     public static void main(String[] args) {
         FCFS fcfs = new FCFS();
         fcfs.getSchedule();
