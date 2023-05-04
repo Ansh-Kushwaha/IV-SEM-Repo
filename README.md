@@ -10,7 +10,7 @@ A repository of programs/files made in 4th semester.
 
 # ADA Lab
 ## Lab Dates :
-```02/03/2023``` | ```09/03/2023``` | ```16/03/2023``` | ```23/03/2023``` | ```06/04/2023``` | ```13/04/20203``` | ```27/04/2023```
+```02/03/2023``` | ```09/03/2023``` | ```16/03/2023``` | ```23/03/2023``` | ```06/04/2023``` | ```13/04/20203``` | ```27/04/2023``` | ```04/05/2023```
 ## Experiments List :
 ## Unit-1
 
@@ -28,7 +28,7 @@ A repository of programs/files made in 4th semester.
 ## Unit-2
 12. Write a program to implement Knapsack Problem using Greedy Approach. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/12_KnapsackProblem.cpp)
 13. Write a program to implement single source shortest path algorithm. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/13_SingleSourceShortPath.cpp)
-14. Write a program to implement 0/1 Knapsack problem. [***To-Do***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/14_0-1Knapsack.cpp)
+14. Write a program to implement 0/1 Knapsack problem. [***Table***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/14-1_0-1Knapsack_Table.cpp) [***Set***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/14.2_0-1Knapsack_Set.cpp)
 15. Write a program to implement Job Sequencing with deadline problem using Greedy Method. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/15_JobSequencing.cpp)
 
 ***
