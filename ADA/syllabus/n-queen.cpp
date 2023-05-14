@@ -3,7 +3,7 @@ using namespace std;
 
 bool place(int k, int i, int x[]) {
     for(int j = 0; j < k - 1; j++) {
-        if(x[j] == i || abs(x[j] - i) == abs(j - k)) {
+        if(x[j] == i + 1 || abs(x[j] - (i + 1)) == abs(j - (k - 1))) {
             return false;
         }
     }
