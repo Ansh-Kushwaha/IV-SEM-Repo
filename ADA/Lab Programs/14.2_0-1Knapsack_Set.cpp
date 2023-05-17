@@ -46,4 +46,4 @@ int main() {
     cout << "Maximum profit earned : " << knapsack(m, n, profit, weight) << endl;
 
     return 0;
-}c
+}

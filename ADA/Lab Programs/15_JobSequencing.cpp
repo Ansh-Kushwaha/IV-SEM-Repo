@@ -27,7 +27,7 @@ int jobSeq(struct Job jobs[], int n) {
             t = jobsC[i].deadline;
     }
 
-    int schJobs[n]; // Scheduling of jobs
+    int schJobs[t]; // Scheduling of jobs
     int totalProfit = 0;
 
     for(int i = 0; i < t; i++)
@@ -57,9 +57,9 @@ int jobSeq(struct Job jobs[], int n) {
 }
 int main() {
     int n;
-    struct Job jobs[n];
     cout << "Enter number of jobs : ";
     cin >> n;
+    struct Job jobs[n];
     for(int i = 0; i < n; i++) {
         jobs[i].id = i + 1;
         cout << "Enter profit and deadline of job " << i + 1 << " : ";
