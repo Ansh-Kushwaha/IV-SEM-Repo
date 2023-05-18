@@ -19,6 +19,7 @@ void nQueen(int k, int n, int x[]) {
             // If all queens have been placed
             if(k == n) {
                 // Write x
+                cout << "x: ";
                 for(int i = 0; i < n; i++)
                     cout << x[i] << " ";
                 cout << endl;

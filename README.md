@@ -10,7 +10,7 @@ A repository of programs/files made in 4th semester.
 
 # ADA Lab
 ## Lab Dates :
-```02/03/2023``` | ```09/03/2023``` | ```16/03/2023``` | ```23/03/2023``` | ```06/04/2023``` | ```13/04/20203``` | ```27/04/2023``` | ```04/05/2023``` | ```11/05/2023```
+```02/03/2023``` | ```09/03/2023``` | ```16/03/2023``` | ```23/03/2023``` | ```06/04/2023``` | ```13/04/20203``` | ```27/04/2023``` | ```04/05/2023``` | ```11/05/2023``` | ```18/05/2023```
 ## Experiments List :
 ## Unit-1
 
@@ -28,9 +28,12 @@ A repository of programs/files made in 4th semester.
 ## Unit-2
 12. Write a program to implement Knapsack Problem using Greedy Approach. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/12_KnapsackProblem.cpp)
 13. Write a program to implement single source shortest path algorithm. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/13_SingleSourceShortPath.cpp)
-14. Write a program to implement 0/1 Knapsack problem. [***Table***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/14-1_0-1Knapsack_Table.cpp) [***Set***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/14.2_0-1Knapsack_Set.cpp)
-15. Write a program to implement Job Sequencing with deadline problem using Greedy Method. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/15_JobSequencing.cpp)
+14. Write a program to implement Job Sequencing with deadline problem using Greedy Method. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/15_JobSequencing.cpp)
 
+## Unit-3
+15. Write a program to implement 0/1 Knapsack problem. [***Table***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/14-1_0-1Knapsack_Table.cpp) [***Set***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/14.2_0-1Knapsack_Set.cpp)
+## Unit-4
+16. Write a program to implement n-queen problmem. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/14-1_0-1Knapsack_Table.cpp)
 ***
 
 # SE Lab :
@@ -64,13 +67,14 @@ A repository of programs/files made in 4th semester.
 
 # OS Lab :
 ## Lab Dates :
-```27/02/2023``` | ```06/03/2023``` | ```13/03/2023``` | ```20/02/2023 (Abs.)``` | ```27/03/2023``` | ```10/04/2023``` | ```17/04/2023``` | ```24/04/2023```
+```27/02/2023``` | ```06/03/2023``` | ```13/03/2023``` | ```20/02/2023 (Abs.)``` | ```27/03/2023``` | ```10/04/2023``` | ```17/04/2023``` | ```24/04/2023``` | ```15/05/2023```
 ## Experiments List :
 1. History of Operating Systems.
+2. Types of Operating Systems.
 2. WAP to implement FCFS CPU Scheduling Algorithm. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/OS/Process%20Scheduling/FCFS.java)
-2. WAP to implement SJF CPU Scheduling Algorithm. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/OS/Process%20Scheduling/ShortestJobFirst.java)
-2. WAP to implement Priority CPU Scheduling Algorithm. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/OS/Process%20Scheduling/PriorityScheduling.java)
-2. WAP to implement Round Robin CPU Scheduling Algorithm. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/OS/Process%20Scheduling/RoundRobin.java)
+3. WAP to implement SJF CPU Scheduling Algorithm. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/OS/Process%20Scheduling/ShortestJobFirst.java)
+4. WAP to implement Priority CPU Scheduling Algorithm. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/OS/Process%20Scheduling/PriorityScheduling.java)
+5. WAP to implement Round Robin CPU Scheduling Algorithm. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/OS/Process%20Scheduling/RoundRobin.java)
 ***
 
 # Python Lab :
