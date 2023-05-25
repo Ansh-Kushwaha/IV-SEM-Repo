@@ -21,7 +21,7 @@ void floydWarshall(vector<vector<int>> graph, int n) {
                 if(cost[i][k] + cost[k][j] < cost[i][j])
                     // Update cost of path from vertex i to vertex j
                     cost[i][j] = cost[i][k] + cost[k][j];
-    
+
     // Output
     for(int i = 0; i < n; i++) {
         for(int j = 0; j < n; j++) {
@@ -36,10 +36,10 @@ void floydWarshall(vector<vector<int>> graph, int n) {
 
 int main() {
     int n = 4;
-    vector<vector<int>> graph = { {0,   5,  INF, 10},
-                                  {INF,  0,  3,  INF},
-                                  {INF, INF, 0,   1},
-                                  {INF, INF, INF, 0} };
+    vector<vector<int>> graph = { {0,   8,  INF, 1},
+                                  {INF,  0,  1,  INF},
+                                  {4, INF, 0,   INF},
+                                  {INF, 2, 9, 0} };
 
     floydWarshall(graph, n);
 

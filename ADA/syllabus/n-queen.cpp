@@ -33,7 +33,7 @@ void nQueen(int k, int n, int x[]) {
 
 int main() {
     // Size of board
-    int n = 4;
+    int n = 32;
     // Array to store the position of queens
     int x[n];
     nQueen(1, n, x);
