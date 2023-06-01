@@ -227,7 +227,6 @@ int main() {
     tree.insert(12);
     tree.insert(20);
     tree.insert(50);
-    tree.insert(9);
 
     tree.preorder();
     tree.inorder();

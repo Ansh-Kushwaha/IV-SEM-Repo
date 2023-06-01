@@ -10,7 +10,7 @@ A repository of programs/files made in 4th semester.
 
 # ADA Lab
 ## Lab Dates :
-```02/03/2023``` | ```09/03/2023``` | ```16/03/2023``` | ```23/03/2023``` | ```06/04/2023``` | ```13/04/20203``` | ```27/04/2023``` | ```04/05/2023``` | ```11/05/2023``` | ```18/05/2023``` | ```25/05/2023```
+```02/03/2023``` | ```09/03/2023``` | ```16/03/2023``` | ```23/03/2023``` | ```06/04/2023``` | ```13/04/2023``` | ```27/04/2023``` | ```04/05/2023``` | ```11/05/2023``` | ```18/05/2023``` | ```25/05/2023``` | ```01/06/2023```
 ## Experiments List :
 ## Unit-1
 
@@ -33,7 +33,7 @@ A repository of programs/files made in 4th semester.
 ## Unit-3
 15. Write a program to implement 0/1 Knapsack problem. [***Table***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/14-1_0-1Knapsack_Table.cpp) [***Set***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/14.2_0-1Knapsack_Set.cpp)
 ## Unit-4
-16. Write a program to implement n-queen problmem. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/Lab%20Programs/14-1_0-1Knapsack_Table.cpp)
+16. Write a program to implement n-queen problmem. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/ADA/syllabus/n-queen.cpp)
 ***
 
 # SE Lab :
@@ -56,8 +56,8 @@ A repository of programs/files made in 4th semester.
 ```28/02/2023``` | ```07/03/2023``` | ```14/03/2023``` | ```21/03/20203 (Abs.)``` | ```28/03/2023``` | ```11/04/2023``` | ```18/04/2023``` | ```25/04/2023``` | ```02/05/2023``` | ```09/05/2023``` | ```16/05/2023``` | ```23/05/2023```
 ## Experiments List :
 1. Study of multiplexer and demultiplexer.
-2. Study of half adder and subtractor
-3. Study of full adder and subtractor
+2. Study of half adder and subtractor.
+3. Study of full adder and subtractor.
 
 ### Programs :
 1. Write a program to add two 8 bit numbers.
@@ -67,18 +67,18 @@ A repository of programs/files made in 4th semester.
 
 # OS Lab :
 ## Lab Dates :
-```27/02/2023``` | ```06/03/2023``` | ```13/03/2023``` | ```20/02/2023 (Abs.)``` | ```27/03/2023``` | ```10/04/2023``` | ```17/04/2023``` | ```24/04/2023``` | ```15/05/2023``` | ```22/05/2023```
+```27/02/2023``` | ```06/03/2023``` | ```13/03/2023``` | ```20/02/2023 (Abs.)``` | ```27/03/2023``` | ```10/04/2023``` | ```17/04/2023``` | ```24/04/2023``` | ```15/05/2023``` | ```22/05/2023``` | ```29/05/2023```
 ## Experiments List :
 1. History of Operating Systems.
 2. Types of Operating Systems.
-2. WAP to implement FCFS CPU Scheduling Algorithm. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/OS/Process%20Scheduling/FCFS.java)
-3. WAP to implement SJF CPU Scheduling Algorithm. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/OS/Process%20Scheduling/ShortestJobFirst.java)
-4. WAP to implement Priority CPU Scheduling Algorithm. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/OS/Process%20Scheduling/PriorityScheduling.java)
-5. WAP to implement Round Robin CPU Scheduling Algorithm. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/OS/Process%20Scheduling/RoundRobin.java)
+3. WAP to implement FCFS CPU Scheduling Algorithm. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/OS/Process%20Scheduling/FCFS.java)
+4. WAP to implement SJF CPU Scheduling Algorithm. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/OS/Process%20Scheduling/ShortestJobFirst.java)
+5. WAP to implement Priority CPU Scheduling Algorithm. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/OS/Process%20Scheduling/PriorityScheduling.java)
+6. WAP to implement Round Robin CPU Scheduling Algorithm. [***Done***](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/OS/Process%20Scheduling/RoundRobin.java)
 ***
 
 # Python Lab :
 ## Lab Dates :
-```03/03/2023``` | ```10/03/2023``` | ```17/03/2023``` | ```24/03/2023``` | ```31/03/2023```
+```03/03/2023``` | ```10/03/2023``` | ```17/03/2023``` | ```24/03/2023``` | ```31/03/2023``` | ```28/04/2023``` | ```12/05/2023``` | ```26/05/2023```
 ### Lab Programs :
 [Here](https://github.com/Ansh-Kushwaha/IV-SEM-Repo/blob/main/Python/Problems.md)
