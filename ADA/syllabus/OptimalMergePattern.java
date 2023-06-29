@@ -4,7 +4,7 @@ public class OptimalMergePattern {
     private static void merge(Integer[] arr1, Integer[] arr2, Integer[] arr3) {
         int i = 0, j = 0, k = 0;
         while (i < arr1.length && j < arr2.length) {
-            if (arr1[1] <= arr2[j]) {
+            if (arr1[i] < arr2[j]) {
                 arr3[k++] = arr1[i++];
             }
             else {
@@ -14,18 +14,21 @@ public class OptimalMergePattern {
         if (i == arr1.length)
             while (j < arr2.length)
                 arr3[k++] = arr2[j++];
-        else
+        else if (j == arr2.length)
             while (i < arr1.length)
                 arr3[k++] = arr1[i++];
     }
 
     private static Integer[] optimalMerge(List<Integer[]> files) {
-        PriorityQueue<Integer[]> pq = new PriorityQueue<>(files.size(),new Comparator<Integer[]>() {
+        PriorityQueue<Integer[]> pq = new PriorityQueue<>(files.size(), new Comparator<Integer[]>() {
             @Override
             public int compare(Integer[] f1, Integer[] f2) {
-                if (f1.length < f2.length)
+                if (f1.length > f2.length)
                     return 1;
-                return -1;
+                else if (f1.length == f2.length)
+                    return 0;
+                else
+                    return -1;
             }
         });
 
@@ -38,6 +41,7 @@ public class OptimalMergePattern {
             System.out.println("Merged files of size : " + f1.length + " & " + f2.length);
             Integer[] merged = new Integer[f1.length + f2.length];
             merge(f1, f2, merged);
+            
             pq.offer(merged);
         }
         
@@ -47,7 +51,7 @@ public class OptimalMergePattern {
     public static void main(String[] agrs) {
         Integer[] a = {1, 2};
         Integer[] b = {4, 6, 7, 8};
-        Integer[] c = {1};
+        Integer[] c = {1, 5, 6, 7, 8, 12 ,43};
         Integer[] d = {10, 13, 14, 29};
         Integer[] res;
 
