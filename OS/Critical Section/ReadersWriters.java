@@ -65,18 +65,14 @@ public class ReadersWriters {
     }
     
     public static class RW {
-        int mutex = 1, wrt = 1, readCnt = 0;
+        int mutex = 1, rw_mutex = 1, readerCnt = 0;
 
         public void write() throws InterruptedException {
             while (true) {
                 synchronized (this) {
-                    if (wrt == 0)
-                        wait();
-                    System.out.println("Writer is writing");
-                    
-                    wrt++;
-                    notify();
-                    Thread.sleep(250);
+                    wait(rw_mutex);
+                    System.out.println("Writer is writing.");
+                    signal(rw_mutex);
                 }
             }
         }
@@ -84,30 +80,17 @@ public class ReadersWriters {
         public void read(long id) throws InterruptedException {
             while (true) {
                 synchronized (this) {
-                    if (wrt == 0 || mutex == 0)
-                        wait();
-                    
-                    readCnt++;
-                    if (readCnt == 1) {
-                        wait();
-                        wrt--;
-                    }
-                    if (mutex == 0) {
-                        notifyAll();
-                        mutex++;
-                    }
-
-                    System.out.println("Reader " + id + " is reading");
-
-                    if (mutex == 0)
-                        wait();
-                    readCnt--;
-
-                    if (readCnt == 0)
-                        wrt++;
-                    if (mutex == 0)
-                        mutex++;
-                    Thread.sleep(250);    
+                    wait(mutex);
+                    readerCnt++;
+                    if (readerCnt == 1)
+                        wait(rw_mutex);
+                    signal(mutex);
+                    System.out.println("Reader " + id + " is reading.");
+                    wait(mutex);
+                    readerCnt--;
+                    if (readerCnt == 0)
+                        signal(rw_mutex);
+                    signal(mutex);
                 }
             }
         }
